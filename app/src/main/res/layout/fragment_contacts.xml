@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb" >
+
+        <!--输入框-->
+        <!--<com.sj.yinjiaoyun.learn.view.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@mipmap/search"
+            android:hint="@string/search"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:textSize="16sp" />-->
+
+
+
+
+            <!--列表-->
+            <ListView
+                android:id="@+id/country_lvcountry"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:listSelector="@android:color/transparent" />
+
+            <!--字母显示-->
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorGreen"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <!--字母导航-->
+            <com.sj.yinjiaoyun.xuexi.view.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible" />
+
+
+
+
+</RelativeLayout>

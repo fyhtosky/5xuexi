@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_home_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayish"
+        android:drawableLeft="@mipmap/home_publicclass"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:text="推荐公开课" />
+
+    <RelativeLayout
+        android:id="@+id/item_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--课程图片-->
+        <LinearLayout
+            android:id="@+id/expand_child_container"
+            android:layout_width="148dp"
+            android:layout_height="93dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/item_home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--课程名称-->
+        <TextView
+            android:id="@+id/item_home_courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/expand_child_container"
+            android:layout_toRightOf="@id/expand_child_container"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+        <!--学校 开课方式 价格 人数-->
+        <TextView
+            android:id="@+id/item_home_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/expand_child_container"
+            android:layout_alignBottom="@id/expand_child_container"
+            android:hint="价格"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_home_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/expand_child_container"
+            android:alpha="0.8"
+            android:textColor="@color/colorHomeitem"
+            android:drawableLeft="@mipmap/openclass_icon"
+            android:drawablePadding="3dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_home_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/item_home_price"
+            android:layout_alignLeft="@id/item_home_price"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.8"
+            android:textColor="@color/colorHomeitem"
+            android:hint="学院"
+            android:padding="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_home_tutionWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/item_home_attention"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.8"
+            android:textColor="@color/colorHomeitem"
+            android:drawablePadding="3dp"
+            android:hint="开课方式"
+            android:padding="2dp"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <!--是否付费-->
+    <ImageView
+        android:id="@+id/expand_child_courseState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/expend_state"
+        android:visibility="gone" />
+
+    <!--分割线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorGrayish" />
+</LinearLayout>

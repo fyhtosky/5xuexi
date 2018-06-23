@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <!--缺省值-->
+      <LinearLayout
+          android:id="@+id/micro_defaultContainer"
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:layout_marginTop="200dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <ImageView
+             android:id="@+id/kec_defaults"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/default_couse"/>
+         <TextView
+             android:gravity="center"
+             android:textSize="14sp"
+             android:padding="10dp"
+             android:text="尚无正在学习的微专业"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/micro_courseContainer"
+          android:orientation="vertical"
+          android:visibility="gone"
+          android:background="@color/colorGrayish"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <!--顶部专业切换-->
+         <com.sj.yinjiaoyun.xuexi.view.ScheduleTitleView
+             android:id="@+id/micro_scheduleTitleView"
+             app:attr_checkbox_text="切换微专业"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/colorGrayish"/>
+
+         <!--微专业学校  定期开课  报名时间 整体进度 -->
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/colorWrite"
+             android:padding="5dp">
+            <TextView
+                android:id="@+id/micro_college"
+                android:hint="学校"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/micro_tutionWay"
+                android:hint="开课方式"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/micro_registerTime"
+                android:hint="报名时间"
+                android:visibility="gone"
+                android:layout_below="@id/micro_college"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+         </RelativeLayout>
+         <!--进度条-->
+         <LinearLayout
+             android:layout_marginBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/colorWrite"
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+             android:paddingBottom="5dp"
+             android:paddingTop="5dp"
+             android:paddingRight="5dp"
+             android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="整体进度："/>
+            <ProgressBar
+                android:id="@+id/micro_progressbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="6dp"
+                android:max="100"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progressbar_color"
+                />
+            <TextView
+                android:id="@+id/micro_progressMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:hint="0%"/>
+         </LinearLayout>
+
+         <!--列表-->
+         <com.sj.yinjiaoyun.xuexi.widget.NewListView
+             android:id="@+id/micro_listView"
+             android:layout_width="match_parent"
+             android:background="@color/colorWrite"
+             android:layout_height="0dp"
+             android:layout_weight="1"/>
+      </LinearLayout>
+   </RelativeLayout>
+
+
+</ScrollView>

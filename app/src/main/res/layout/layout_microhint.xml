@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGreen"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/micro_hint_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@mipmap/icon_back" />
+        <RadioGroup
+            android:id="@+id/micro_hint_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RadioButton
+                android:id="@+id/micro_hint_rb1"
+                android:text="简介"
+                android:checked="true"
+                android:background="@drawable/greenorwrite_uderline_selector"
+                style="@style/myStyle_Schedule"
+                android:padding="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/micro_hint_rb2"
+                android:text="课程体系"
+                style="@style/myStyle_Schedule"
+                android:background="@drawable/greenorwrite_uderline_selector"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/micro_hint_rb3"
+                android:text="评价"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/greenorwrite_uderline_selector"
+                style="@style/myStyle_Schedule"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/micro_hint_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

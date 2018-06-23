@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--duration  动画时间段-->
+    <!--fromXDelta  动画x轴方向起点占总屏幕的百分比-->
+    <!--toXDelta  动画x轴方向终点占总屏幕的百分比-->
+    <!--interpolator  动画的速度-->
+
+    <translate xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:duration="200"
+
+        android:fromXDelta="0%p"
+
+        android:interpolator="@android:anim/linear_interpolator"
+
+        android:toXDelta="0%p" />
+</set>

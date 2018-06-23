@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+    <ImageView
+        android:id="@+id/edit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_user" />
+    <TextView
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_toLeftOf="@+id/edit_edit"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:id="@+id/edit_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/edit_icon"
+        android:layout_alignTop="@id/edit_icon"
+        android:layout_toRightOf="@id/edit_icon"
+        android:singleLine="true"
+        android:background="@null"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:hint="@string/account"
+        android:paddingLeft="2dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_below="@id/edit_icon"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGray" />
+</RelativeLayout>

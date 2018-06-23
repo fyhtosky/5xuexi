@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/dayi_title"
+        app:attr_titlebar_title="答疑"
+        app:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dayi_tiwen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorWrite"
+        android:text="我要提问"/>
+
+    <com.sj.yinjiaoyun.xuexi.widget.AutoListView
+        android:id="@+id/dayi_listView"
+        android:layout_below="@id/dayi_title"
+        android:layout_above="@id/dayi_tiwen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

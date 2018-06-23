@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+    <Button
+        android:id="@+id/pop_delete_message"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:text="删除该收藏" />
+</RelativeLayout>

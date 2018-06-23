@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayish">
+        <!--目录-->
+        <ExpandableListView
+            android:id="@+id/directory_expandableListView"
+            android:layout_marginTop="10dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="#00000000"
+            android:groupIndicator="@null"
+            android:scrollingCache="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/directory_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:alpha="0.7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:hint="暂无课程章节"
+            android:layout_marginTop="10dp"/>
+</RelativeLayout>

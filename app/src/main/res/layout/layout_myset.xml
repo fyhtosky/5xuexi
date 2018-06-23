@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/myset_titleBarView"
+        titlebar:attr_titlebar_title="设置"
+        titlebar:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myset_clean"
+        android:onClick="onclick"
+        android:layout_marginTop="10dp"
+        app:attr_txt="清除缓存"
+        app:attr_mark="60.8M"
+        app:attr_mark_color="@color/colorHomeitem"
+        android:padding="8dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myset_check"
+        android:layout_marginTop="1dp"
+        app:attr_txt="检查更新"
+        app:attr_mark="V1.2"
+        app:attr_mark_color="@color/colorHomeitem"
+        android:onClick="onclick"
+        android:padding="8dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myset_about"
+        android:layout_marginTop="1dp"
+        android:onClick="onclick"
+        app:attr_txt="关于软件"
+        android:padding="8dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myset_share"
+        android:layout_marginTop="1dp"
+        app:attr_txt="分享给朋友"
+        app:attr_mark_color="@color/colorHomeitem"
+        android:onClick="onclick"
+        android:padding="8dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/myset_exit"
+        android:onClick="onclick"
+        android:button="@null"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="退出登录"/>
+</LinearLayout>

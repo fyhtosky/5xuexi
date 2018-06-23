@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite"
+    android:id="@+id/item">
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/select"/>
+        <TextView
+            android:layout_toRightOf="@+id/iv_select"
+            android:layout_toLeftOf="@+id/tv_type"
+            android:id="@+id/tv_course_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="大学语文"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="专业选修课程"/>
+
+</RelativeLayout>

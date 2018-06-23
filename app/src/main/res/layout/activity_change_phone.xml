@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sj.yinjiaoyun.xuexi.activity.ChangePhoneActivity">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/itleBarView"
+        titlebar:attr_titlebar_title="修改手机号"
+        titlebar:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!--手机号-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="@color/colorWrite">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="新手机号"
+            android:textSize="16sp"
+            android:alpha="0.9"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tv_phone"
+            android:layout_alignTop="@id/tv_phone"
+            android:layout_toRightOf="@id/tv_phone"
+            android:background="@null"
+            android:hint="请输入新的手机号"
+            android:paddingLeft="15dp" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+<!--图片验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="@color/colorWrite">
+
+        <TextView
+            android:id="@+id/tv_Imcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="图片验证码"
+            android:textSize="16sp"
+            android:alpha="0.9"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:id="@+id/et_Imcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tv_Imcode"
+            android:layout_alignTop="@id/tv_Imcode"
+            android:layout_toRightOf="@id/tv_Imcode"
+            android:layout_toLeftOf="@+id/iv_Imcode"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="请输入图片验证码"
+            android:gravity="center|left"
+            android:paddingLeft="15dp" />
+        <ImageView
+            android:id="@+id/iv_Imcode"
+            android:padding="2dp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_refresh"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_default_adimage" />
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/refresh"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+    <!--验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="@color/colorWrite">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="手机验证码"
+            android:textSize="16sp"
+            android:alpha="0.9"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tv_code"
+            android:layout_alignTop="@id/tv_code"
+            android:layout_toRightOf="@id/tv_code"
+            android:layout_toLeftOf="@+id/bt_code"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="请输入手机验证码"
+            android:gravity="center|left"
+            android:paddingLeft="15dp" />
+        <Button
+            android:id="@+id/bt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textColor="@color/colorGreen"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:gravity="center"
+
+            android:text="获取验证码"
+            android:textSize="14sp" />
+        <!--android:background="@drawable/bg_drug_green"-->
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+
+
+    <!--提交-->
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/bg_student_login"
+        android:text="提交"
+        android:textColor="@color/colorWrite" />
+
+</LinearLayout>

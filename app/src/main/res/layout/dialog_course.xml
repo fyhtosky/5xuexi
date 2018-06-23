@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:weightSum="3">
+
+        <com.sj.yinjiaoyun.xuexi.widget.SaveCheckBox
+            android:id="@+id/dialog_course_rb1"
+            style="@style/my_dialog_course"
+            android:drawableTop="@drawable/dialog_dayi_selector"
+            android:text="答疑"
+            android:focusable="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.sj.yinjiaoyun.xuexi.widget.SaveCheckBox
+            android:id="@+id/dialog_course_rb2"
+            style="@style/my_dialog_course"
+            android:drawableTop="@drawable/dialog_zuoye_selector"
+            android:text="作业"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.sj.yinjiaoyun.xuexi.widget.SaveCheckBox
+            android:id="@+id/dialog_course_rb3"
+            style="@style/my_dialog_course"
+            android:drawableTop="@drawable/dialog_ceshi_selector"
+            android:text="测试"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

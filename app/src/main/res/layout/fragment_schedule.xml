@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+    <!--专业 微专业  公开课-->
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGreen">
+    <RadioGroup
+        android:id="@+id/item_head_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <RadioButton
+            android:id="@+id/item_head_rb1"
+            style="@style/my_course_center_schedule_fragment"
+            android:text="专业"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/item_head_rb2"
+            style="@style/my_course_center_schedule_fragment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="微专业"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/item_head_rb4"
+            style="@style/my_course_center_schedule_fragment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="公开课"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <!--下滑线绿色动画-->
+    <RelativeLayout
+        android:id="@+id/schedule_underLineC"
+        android:layout_alignBottom="@id/item_head_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWrite"/>
+    </RelativeLayout>
+    </RelativeLayout>
+    <!--分割线-->
+    <ImageView
+        android:id="@+id/schedule_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/schedule_underLineC"
+        android:background="@color/colorGreen"/>
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/colorGrayish"
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

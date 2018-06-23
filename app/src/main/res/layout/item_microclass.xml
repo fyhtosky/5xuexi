@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--课程图片-->
+    <LinearLayout
+        android:id="@+id/item_micro_container"
+        android:layout_width="148dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/item_micro_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--课程名称-->
+    <TextView
+        android:id="@+id/item_micro_courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_micro_container"
+        android:layout_toRightOf="@id/item_micro_container"
+        android:hint="课程名称"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true" />
+
+    <com.sj.yinjiaoyun.xuexi.view.ProgressBarView
+        android:id="@+id/item_micro_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_micro_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/item_micro_container" />
+
+    <TextView
+        android:id="@+id/item_micro_learnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_micro_progress"
+        android:layout_above="@id/item_micro_progress"
+        android:layout_toLeftOf="@+id/item_micro_teacher"
+        android:alpha="0.8"
+        android:hint="学习时长"
+        android:padding="2dp"
+        android:textColor="@color/colorHomeitem"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_micro_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_micro_progress"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:alpha="0.8"
+        android:hint="授课老师"
+        android:textColor="@color/colorHomeitem"
+        android:padding="2dp"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

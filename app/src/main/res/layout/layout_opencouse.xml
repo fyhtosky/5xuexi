@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--视屏播放器-->
+
+
+    <com.sj.yinjiaoyun.xuexi.view.PLView.PLPlayView
+        android:id="@+id/open_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorBlack">
+        <!--视频暂停时候的标题显示-->
+        <TextView
+            android:id="@+id/open_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:lines="1"
+            android:textSize="22sp"
+            android:alpha="0.7"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"/>
+    </com.sj.yinjiaoyun.xuexi.view.PLView.PLPlayView>
+
+
+    <RelativeLayout
+        android:id="@+id/open_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--目录 简介 成绩-->
+        <RadioGroup
+            android:id="@+id/open_item_head_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/open_rb1"
+                style="@style/my_course_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="简介" />
+
+            <RadioButton
+                android:id="@+id/open_rb2"
+                style="@style/my_course_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="目录" />
+
+            <RadioButton
+                android:id="@+id/open_rb3"
+                style="@style/my_course_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="评价" />
+        </RadioGroup>
+        <!--下滑线动画-->
+        <RelativeLayout
+            android:id="@+id/opencouse_underLineC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/open_item_head_group"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGreen" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/opencouse_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignBottom="@id/opencouse_underLineC"
+            android:background="@color/colorGray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/item_opencourse_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/opencouse_line"
+            android:background="@color/colorGrayish" />
+    </RelativeLayout>
+
+</LinearLayout>

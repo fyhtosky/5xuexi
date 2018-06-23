@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp">
+
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        cell:attr_cell_gravity="true"
+        cell:attr_cell_text="序号" />
+
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        cell:attr_cell_gravity="true"
+        cell:attr_cell_left="true"
+        cell:attr_cell_right="true"
+        cell:attr_cell_text="课程名称" />
+
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        cell:attr_cell_gravity="true"
+        cell:attr_cell_text="授课老师" />
+</LinearLayout>

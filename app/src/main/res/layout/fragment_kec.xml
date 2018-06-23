@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWrite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:id="@+id/kec_tv_titlePlace"
+        android:background="@color/colorGrayish"
+        android:text="请选择课程"/>
+
+    <LinearLayout
+        android:id="@+id/kec_defaultContainer"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/kec_defaults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_couse"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:text="还未设置教学计划，请联系院校管理员。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <com.sj.yinjiaoyun.xuexi.widget.NewExpandableListView
+        android:id="@+id/major_kec_expand"
+        android:layout_below="@id/kec_tv_titlePlace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.sj.yinjiaoyun.xuexi.widget.NewListView
+        android:id="@+id/major_kec_list"
+        android:choiceMode="multipleChoiceModal"
+        android:layout_below="@id/kec_tv_titlePlace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

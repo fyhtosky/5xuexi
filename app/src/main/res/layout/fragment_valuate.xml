@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrayish">
+
+    <RadioGroup
+        android:id="@+id/evaluate_radioGroup"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <RadioButton
+            android:id="@+id/evaluate_rb1"
+            android:text="全部评价"
+            android:checked="true"
+            style="@style/my_course_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/evaluate_rb2"
+            android:text="好评"
+            style="@style/my_course_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/evaluate_rb3"
+            android:text="中评"
+            style="@style/my_course_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/evaluate_rb4"
+            android:text="差评"
+            style="@style/my_course_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/evaluate_container"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrayish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

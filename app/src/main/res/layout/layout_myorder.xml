@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayish">
+
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/myorder_titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        title:attr_titlebar_back="@mipmap/icon_back"
+        title:attr_titlebar_title="我的订单"/>
+
+    <com.sj.yinjiaoyun.xuexi.widget.AutoListView
+        android:id="@+id/myorder_listView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

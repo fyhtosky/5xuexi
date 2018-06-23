@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:padding="4dp" />
+    <LinearLayout 
+        android:id="@+id/ll_constact"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@color/colorWrite">
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/logo"
+            android:padding="3dp"/>
+        <TextView 
+            android:id="@+id/title"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorHomeitem" />
+    </LinearLayout>
+
+</LinearLayout>

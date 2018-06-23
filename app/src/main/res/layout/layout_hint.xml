@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/exam_title"
+        app:attr_titlebar_title="考试"
+        app:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/cell_scrollView"
+        android:layout_below="@id/exam_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/include_cell"/>
+    </ScrollView>
+</RelativeLayout>

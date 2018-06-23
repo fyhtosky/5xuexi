@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:padding="2dp">
+        <ImageView
+            android:id="@+id/ordercomment_back"
+            android:onClick="onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单评价"
+            android:textColor="@color/colorWrite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ordercomment_tijiao"
+            android:onClick="onclick"
+            android:textColor="@color/textcolor_writeorgreen_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="提交"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="专业评分"/>
+        <RatingBar
+            android:id="@+id/ordercomment_ratingBar"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:isIndicator="false"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:soundEffectsEnabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:numStars="5"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ordercomment_EditView"
+        android:layout_marginTop="0.5dp"
+        android:hint="觉得这个专业怎么样，快发表你的评论吧！（不超过300字）"
+        android:gravity="left"
+        android:padding="10dp"
+        android:maxLength="300"
+        android:lineSpacingMultiplier="1.2"
+        android:background="@color/colorWrite"
+        android:lines="8"
+        android:textColorHint="@color/colorGray"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

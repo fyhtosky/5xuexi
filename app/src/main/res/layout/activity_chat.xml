@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context="com.sj.yinjiaoyun.xuexi.activity.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/base_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_hight"
+        android:background="@color/colorGreen" >
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_back"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_back"
+            android:gravity="center"
+            android:text="xxx"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/iv_message_no"
+            android:layout_toRightOf="@+id/tv_title"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/nomassage"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.sj.yinjiaoyun.xuexi.widget.DropdownListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/base_header"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:transcriptMode="normal"
+        android:listSelector="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="#F5F6F7" >
+
+            <com.sj.yinjiaoyun.xuexi.view.MyEdittext
+                android:enabled="true"
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorWrite"
+                android:padding="3dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/image_face"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/face" />
+            <Button
+                android:id="@+id/send"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@mipmap/img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorWrite"
+                android:textSize="12sp"/>
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorGray" />
+
+        <include
+            android:id="@+id/chat_face_container"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

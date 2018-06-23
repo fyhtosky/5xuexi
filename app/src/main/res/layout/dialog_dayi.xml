@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/dialog_dayi_editView"
+        android:gravity="left"
+        android:padding="5dp"
+        android:hint="请输入你的问题（不超过300个字）"
+        android:textColorHint="@color/colorGray"
+        android:maxLength="300"
+        android:minLines="8"
+        android:maxLines="15"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayish"/>
+
+    <Button
+        android:id="@+id/dialog_dayi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWrite"
+        android:layout_gravity="right"
+        android:background="@color/colorGreen"/>
+</LinearLayout>

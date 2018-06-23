@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:filt="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sj.yinjiaoyun.xuexi.view.FiltrateView
+        android:id="@+id/find_pop_mold"
+        filt:attrs_filtrate_name="类型："
+        filt:attrs_filtrate_total="全部"
+        filt:attrs_filtrate_one="微专业"
+        filt:attrs_filtrate_two="公开课"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.FiltrateView
+        android:id="@+id/find_pop_price"
+        filt:attrs_filtrate_name="价格："
+        filt:attrs_filtrate_total="全部"
+        filt:attrs_filtrate_one="免费"
+        filt:attrs_filtrate_two="付费"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.FiltrateView
+        android:id="@+id/find_pop_tutionWay"
+        filt:attrs_filtrate_name="开课方式："
+        filt:attrs_filtrate_total="全部"
+        filt:attrs_filtrate_one="随到随学"
+        filt:attrs_filtrate_two="定期开课"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:background="@color/colorWrite">
+        <TextView
+            android:id="@+id/find_pop_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:text="重置筛选"/>
+        <Button
+            android:id="@+id/find_pop_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/colorWrite"
+            android:background="@color/colorGreen"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:text="确认" />
+    </RelativeLayout>
+</LinearLayout>

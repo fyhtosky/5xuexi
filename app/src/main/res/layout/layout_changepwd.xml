@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sj.yinjiaoyun.xuexi.activity.ChangePwdActivity">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/itleBarView"
+        titlebar:attr_titlebar_title="修改登录密码"
+        titlebar:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+
+    <!--旧密码-->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_old_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧密码"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:alpha="0.9"
+            android:gravity="center"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tv_old_pwd"
+            android:layout_alignTop="@id/tv_old_pwd"
+            android:layout_toRightOf="@id/tv_old_pwd"
+            android:background="@null"
+            android:hint="请输入旧密码"
+            android:paddingLeft="15dp" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGray" />
+    <!--密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tv_new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:layout_centerVertical="true"
+            android:alpha="0.9"
+            android:textSize="16sp"
+            android:text="新密码"/>
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/tv_new_pwd"
+            android:layout_toLeftOf="@+id/cb_pwd"
+            android:layout_alignBottom="@+id/tv_new_pwd"
+            android:background="@null"
+            android:textSize="16sp"
+            android:hint="请输入新密码"
+            android:paddingLeft="15dp" />
+        <CheckBox
+            android:id="@+id/cb_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:checked="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_verify_selector"
+            android:button="@color/colorWrite" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGray" />
+
+
+    <!--注册-->
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/bg_student_login"
+        android:text="提交"
+        android:textColor="@color/colorWrite" />
+
+
+</LinearLayout>

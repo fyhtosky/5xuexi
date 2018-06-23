@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/jobs_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen">
+        <ImageView
+            android:id="@+id/jobs_back"
+            android:onClick="onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:drawableTop="@mipmap/submit_icon_active"
+            android:src="@mipmap/icon_back"/>
+
+        <TextView
+            android:id="@+id/jobs_zuodabaogaoo"
+            android:onClick="onclick"
+            android:visibility="gone"
+            style="@style/myJobs_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@mipmap/sheet_icon"
+            android:text="作答报告"/>
+
+        <TextView
+            android:id="@+id/jobs_tijiao"
+            android:onClick="onclick"
+            style="@style/myJobs_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@mipmap/submit_icon"
+            android:text="提交"/>
+
+        <TextView
+            android:id="@+id/jobs_datika"
+            android:onClick="onclick"
+            style="@style/myJobs_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/jobs_tijiao"
+            android:drawableTop="@mipmap/sheet_icon"
+            android:text="答题卡"/>
+
+        <TextView
+            android:id="@+id/jobs_shijian"
+            android:onClick="onclick"
+            android:visibility="gone"
+            style="@style/myJobs_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/jobs_datika"
+            android:drawableTop="@mipmap/clock_icon"
+            android:text="时间"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jobs_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHomeitem">
+        <TextView
+            android:id="@+id/jobs_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页数"
+            android:padding="10dp"
+            android:textColor="@color/colorWrite"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/jobs_bottom_left"
+            android:onClick="onclick"
+            android:src="@mipmap/ceshi_left"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/jobs_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/jobs_bottom_right"
+            android:onClick="onclick"
+            android:src="@mipmap/ceshi_right"
+            android:layout_toRightOf="@id/jobs_page"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/jobs_fragment"
+        android:layout_below="@id/jobs_head"
+        android:layout_above="@id/jobs_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

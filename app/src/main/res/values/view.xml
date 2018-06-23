@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录页面  账户图标等自定义控件-->
+    <declare-styleable name="attrs_edit">
+        <attr name="attr_edit_icon" format="reference"/>
+        <attr name="attr_edit_hint" format="string"/>
+        <attr name="attr_edit_name" format="string"/>
+    </declare-styleable>
+
+
+    <!--个人资料自定义控件（左边内别名   右边内容）-->
+    <declare-styleable name="attrs_info">
+        <attr name="attr_name" format="string"/>
+        <attr name="attr_text" format="string"/>
+    </declare-styleable>
+
+    <!--图标和文字信息-->
+    <declare-styleable name="attrs_me">
+        <attr name="attr_image" format="reference"/>
+        <attr name="attr_txt" format="string"/>
+        <attr name="attr_txt_size" format="float"/>
+        <attr name="attr_txt_color" format="reference"/>
+        <attr name="attr_txt_alpha" format="float"/>
+        <attr name="attr_mark" format="string"/>
+        <attr name="attr_mark_size" format="float"/>
+        <attr name="attr_mark_color" format="reference"/>
+        <attr name="attr_mark_alpha" format="float"/>
+    </declare-styleable>
+
+    <!--课程表 顶部专业切换-->
+    <declare-styleable name="attrs_scheduletitle">
+        <attr name="attr_title" format="string"/>
+        <attr name="attr_checkbox" format="boolean"/>
+        <attr name="attr_checkbox_text" format="string"/>
+        <attr name="attr_checkbox_size" format="integer"/>
+    </declare-styleable>
+
+    <!--布局文件 头部 titleBar-->
+    <declare-styleable name="attrs_titlebar">
+        <attr name="attr_titlebar_back" format="reference"/>
+        <attr name="attr_titlebar_title" format="string"/>
+        <attr name="attr_titlebar_img" format="reference"/>
+        <attr name="attr_titlebar_mark" format="string"/>
+    </declare-styleable>
+
+
+    <!--单元格  （作业考试）-->
+    <declare-styleable name="attrs_cell">
+        <attr name="attr_cell_top" format="boolean"/>
+        <attr name="attr_cell_left" format="boolean"/>
+        <attr name="attr_cell_right" format="boolean"/>
+        <attr name="attr_cell_bottom" format="boolean"/>
+        <attr name="attr_cell_gravity" format="boolean"/>
+        <attr name="attr_cell_singleLines" format="boolean"/>
+        <attr name="attr_cell_text" format="string"/>
+        <attr name="attr_cell_size" format="dimension"/>
+        <attr name="attr_cell_color" format="color"/>
+    </declare-styleable>
+
+    <!--做答报告  （作业考试）-->
+    <declare-styleable name="attrs_answer">
+        <attr name="attrs_answer_qid" format="string"/>
+        <attr name="attrs_answer_qidBg" format="dimension"/>
+        <attr name="attr_answer_name" format="string"/>
+        <attr name="attr_answer_nameColor" format="color"/>
+        <attr name="attr_answer_mark" format="string"/>
+        <attr name="attr_answer_markColor" format="color"/>
+    </declare-styleable>
+
+    <!--发现页面  pop里面的搜索框 自定义控件-->
+    <declare-styleable name="attrs_filtrate">
+        <attr name="attrs_filtrate_name" format="string"/>
+        <attr name="attrs_filtrate_total" format="string"/>
+        <attr name="attrs_filtrate_one" format="string"/>
+        <attr name="attrs_filtrate_two" format="string"/>
+    </declare-styleable>
+
+
+</resources>

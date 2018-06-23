@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/pay_titleBarView"
+        title:attr_titlebar_title="支付"
+        title:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--支付页面显示-->
+        <include layout="@layout/include_pay"/>
+        <!--支付完成后页面显示-->
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_Group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_anderline"/>
+
+    <ImageView
+        android:id="@+id/main_anderline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/radioGroup"
+        android:background="@color/colorGrayish"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWrite"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home_selector"
+            style="@style/myStyle_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:text="发现"
+            android:drawableTop="@drawable/main_find_selector"
+            style="@style/myStyle_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:text="课程表"
+            android:drawableTop="@drawable/main_schedule_selector"
+            style="@style/myStyle_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="消息"
+            android:button="@null"
+            android:drawableTop="@drawable/main_message_selector"
+            style="@style/myStyle_main"/>
+        <RadioButton
+            android:id="@+id/rb5"
+            android:text="我"
+            android:drawableTop="@drawable/main_me_selector"
+            style="@style/myStyle_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <!--&lt;!&ndash;消息提示数&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/main_hintContainer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/radioGroup"-->
+        <!--android:layout_alignRight="@+id/radioGroup"-->
+        <!--android:padding="3dp">-->
+        <!--<TextView-->
+            <!--android:id="@+id/main_hintText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"-->
+            <!--android:textColor="@color/colorWrite"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/bg_red_garden"/>-->
+    <!--</LinearLayout>-->
+    <!-- 实现提醒信息用的 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#00000000">
+        <!-- 显示提醒信息的button android:layout_weight=1  是3个butto，平分手机界面的宽度-->
+        <Button
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="#00000000"/>
+        <!-- 占位置的button，以便适应不同分辨率手机 -->
+        <Button
+            android:visibility="invisible"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"/>
+        <!-- 占位置的button，以便适应不同分辨率手机 -->
+        <Button
+            android:visibility="invisible"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"/>
+        <!-- 占位置的button，以便适应不同分辨率手机 -->
+        <Button
+            android:id="@+id/bt_message_count"
+            android:visibility="invisible"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:layout_weight="1" />
+        <!-- 占位置的button，以便适应不同分辨率手机 -->
+        <Button
+            android:id="@+id/main_hintText"
+            android:visibility="invisible"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

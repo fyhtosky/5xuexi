@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root_ScrollVIew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayish">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/major_couseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <!--顶部专业切换-->
+            <com.sj.yinjiaoyun.xuexi.view.ScheduleTitleView
+                android:id="@+id/major_scheduleTitleView"
+                app:attr_checkbox_text="专业切换"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--上部头文件-->
+            <include
+                android:id="@+id/include_head"
+                android:layout_below="@id/major_scheduleTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_schedule_major_head"/>
+            <!--身体列表显示-->
+            <FrameLayout
+                android:layout_below="@id/include_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/newmajor_container"
+                android:background="@color/colorWrite" />
+        </RelativeLayout>
+
+        <!--缺省值显示-->
+        <LinearLayout
+            android:id="@+id/newmajor_defaultContainer"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/kec_defaults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/default_couse"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:text="尚无正在学习的专业\n请到平台网络端报读"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

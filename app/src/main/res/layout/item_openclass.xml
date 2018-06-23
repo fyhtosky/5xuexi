@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite">
+    <!--课程图片-->
+    <LinearLayout
+        android:id="@+id/openclass_container"
+        android:layout_width="148dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/openclass_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--课程名称-->
+    <TextView
+        android:id="@+id/openclass_courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/openclass_container"
+        android:layout_toRightOf="@id/openclass_container"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <com.sj.yinjiaoyun.xuexi.view.ProgressBarView
+        android:id="@+id/openclass_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@id/openclass_container"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/openclass_container"
+        android:alpha="0.8"
+        android:background="@color/colorOrange" />
+
+    <TextView
+        android:id="@+id/openclass_collegeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="111"
+        android:layout_alignLeft="@id/openclass_progress"
+        android:layout_above="@id/openclass_progress"
+        android:alpha="0.8"
+        android:padding="2dp"
+        android:textColor="@color/colorHomeitem"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/openclass_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/openclass_progress"
+        android:layout_alignParentRight="true"
+        android:alpha="0.8"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@mipmap/openclass_icon"
+        android:drawablePadding="3dp"
+        android:padding="3dp"
+        android:textColor="@color/colorHomeitem"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>

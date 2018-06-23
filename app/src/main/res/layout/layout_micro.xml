@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <com.sj.yinjiaoyun.xuexi.view.PLView.PLPlayView
+        android:id="@+id/micro_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+        <!--视频暂停时候的标题显示-->
+        <TextView
+            android:id="@+id/micro_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="10dp"
+            android:textColor="@color/colorGreen"
+            android:textSize="22sp"
+            android:visibility="gone" />
+    </com.sj.yinjiaoyun.xuexi.view.PLView.PLPlayView>
+
+
+    <RelativeLayout
+        android:id="@+id/micro_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--目录 简介  成绩-->
+        <RadioGroup
+            android:id="@+id/micro_head_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/micro_head_rb1"
+                style="@style/my_course_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="简介" />
+
+            <RadioButton
+                android:id="@+id/micro_head_rb2"
+                style="@style/my_course_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="目录" />
+        </RadioGroup>
+        <!--下滑线绿色动画-->
+        <RelativeLayout
+            android:id="@+id/micro_schedule_underLineC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/micro_head_group"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGreen" />
+        </RelativeLayout>
+        <!--分割线-->
+        <ImageView
+            android:id="@+id/micro_schedule_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/micro_schedule_underLineC"
+            android:background="@color/colorGray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/micro_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/micro_schedule_line"
+            android:background="@color/colorGrayish" />
+    </RelativeLayout>
+
+
+</LinearLayout>

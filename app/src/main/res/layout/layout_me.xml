@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:me="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrayish"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGreen"
+        android:padding="2dp">
+        <ImageView
+            android:id="@+id/me_back"
+            android:onClick="onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWrite"
+            android:text="@string/gerenziliao"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--个人信息-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/colorHomeitem"
+                android:text="个人信息" />
+
+            <!--头像-->
+            <RelativeLayout
+                android:id="@+id/me_container_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/myme_touxinag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingLeft="7dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="头像"/>
+                <ImageView
+                    android:id="@+id/me_icon"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/myme_mark"
+                    android:scaleType="centerCrop"
+                    android:layout_width="50dp"
+                    android:src="@mipmap/ic_default_adimage"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:id="@+id/myme_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:drawablePadding="5dp"
+                    android:src="@mipmap/arrow_right"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <!--姓名-->
+            <RelativeLayout
+                android:id="@+id/me_realName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:layout_marginTop="1dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="姓名"/>
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            <!--性别-->
+            <RelativeLayout
+                android:id="@+id/me_sex"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWrite"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="性别"/>
+
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <!--生份证号-->
+            <RelativeLayout
+                android:id="@+id/me_idCard"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:layout_marginTop="1dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="身份证"/>
+
+
+                <TextView
+                    android:id="@+id/tv_idCard"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+            <!--<com.sj.yinjiaoyun.xuexi.view.MeView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="8dp"-->
+                <!--me:attr_mark_alpha="0.6"-->
+                <!--me:attr_txt="身份证"-->
+                <!--style="@style/myStyle_me"-->
+                <!--android:id="@+id/me_idCard"/>-->
+
+            <!--用户名-->
+            <RelativeLayout
+                android:id="@+id/me_userName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:layout_marginTop="1dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="i学令牌"/>
+
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+            <!--<com.sj.yinjiaoyun.xuexi.view.MeView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="8dp"-->
+                <!--me:attr_mark_alpha="0.6"-->
+                <!--me:attr_txt="用户名"-->
+                <!--style="@style/myStyle_me"-->
+                <!--android:id="@+id/me_userName"/>-->
+
+            <!--手机号-->
+            <RelativeLayout
+                android:id="@+id/me_phone"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:layout_marginTop="1dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="手机号"/>
+
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <!--邮箱-->
+            <RelativeLayout
+                android:id="@+id/me_email"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWrite"
+                android:layout_marginTop="1dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorHomeitem"
+                    android:textSize="16sp"
+                    android:text="邮箱"/>
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+            <!--名族-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="民族"
+                style="@style/myStyle_me"
+                android:id="@+id/me_nation"/>
+
+            <!--政治面貌-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="政治面貌"
+                style="@style/myStyle_me"
+                android:id="@+id/me_politicsStatus"/>
+
+            <!--固话-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="固话"
+                style="@style/myStyle_me"
+                android:id="@+id/me_fixPhone"/>
+
+            <!--邮政编码-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="邮政编码"
+                style="@style/myStyle_me"
+                android:id="@+id/me_postalCode"/>
+
+            <!--家庭住址-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                style="@style/myStyle_me"
+                me:attr_txt="家庭住址"
+                android:id="@+id/me_address"/>
+
+
+            <!--教育背景-->
+            <TextView
+                android:id="@+id/me_head_jiaoyubeijing"
+                android:visibility="gone"
+                android:textColor="@color/colorHomeitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="教育背景" />
+
+            <!--高考准考证号-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="高考准考证号"
+                style="@style/myStyle_me"
+                android:visibility="gone"
+                android:id="@+id/me_middleSchool"/>
+
+
+            <!--专科准考证号-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="专科准考证号"
+                style="@style/myStyle_me"
+                android:visibility="gone"
+                android:id="@+id/me_collegeSpecializ"/>
+
+
+            <!--本科准考证号-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="本科准考证号"
+                style="@style/myStyle_me"
+                android:visibility="gone"
+                android:id="@+id/me_collegeSchool"/>
+
+
+            <!--学士学位证号-->
+            <com.sj.yinjiaoyun.xuexi.view.MeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                me:attr_mark_alpha="0.6"
+                me:attr_txt="学士学位证号"
+                style="@style/myStyle_me"
+                android:visibility="gone"
+                android:id="@+id/me_bachelor"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

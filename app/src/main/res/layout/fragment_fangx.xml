@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/containerFangx"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fangx_fangxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="请选择专业方向"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/colorWrite">
+
+       <com.sj.yinjiaoyun.xuexi.widget.NewGridView
+           android:id="@+id/major_fangx_gridview"
+           android:numColumns="2"
+           android:choiceMode="singleChoice"
+           android:horizontalSpacing="15dp"
+           android:verticalSpacing="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+       <!--确认选择-->
+       <Button
+           android:id="@+id/major_fangx_queren"
+           android:layout_margin="10dp"
+           android:textColor="@color/colorWrite"
+           android:layout_width="wrap_content"
+           android:layout_height="35dp"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/btn_sure_orange"
+           android:text="确认选择"/>
+   </LinearLayout>
+
+
+    <!--专业方向简介-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="专业方向简介"/>
+
+    <!--专业方向简介列表-->
+    <com.sj.yinjiaoyun.xuexi.widget.NewListView
+        android:id="@+id/major_fangx_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

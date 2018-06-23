@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayish">
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorGrayish"/>
+    <!--缺省值显示-->
+    <LinearLayout
+        android:id="@+id/defaultContainer"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_couse"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:text="尚无正在学习的专业"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       <!--成绩-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:background="@color/colorWrite"
+           android:orientation="vertical">
+              <!--学习进度-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_jindu"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+
+              <!--学习时长-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_shichang"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+
+              <!--学习行为成绩-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_xingwei"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+
+              <!--平时成绩-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_pingshi"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+
+              <!--结业成绩-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_jieye"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+
+              <!--总成绩-->
+              <com.sj.yinjiaoyun.xuexi.view.InfoView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:id="@+id/homeitem_chengJi_zongchengji"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0.5dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/colorGrayish"/>
+       </LinearLayout>
+
+
+</ScrollView>

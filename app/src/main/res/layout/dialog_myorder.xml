@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_order_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="请选择学期"/>
+    <ImageView
+        android:id="@+id/dialog_order_underLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray"/>
+
+    <GridView
+        android:id="@+id/dialog_order_gridVIew"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:numColumns="4"
+        android:verticalSpacing="15dp"
+        android:choiceMode="singleChoice"
+        android:horizontalSpacing="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/dialog_order_goLearn"
+        style="@style/my_order_style_bottom"
+        android:text="去学习"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/dialog_order_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/dialog_order_account"
+            android:text="应付款"
+            style="@style/my_order_style_bottom"
+            android:background="@color/colorOrange"
+            android:layout_marginRight="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dialog_order_goPay"
+            android:text="去付款"
+            style="@style/my_order_style_bottom"
+            android:background="@color/colorGreen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

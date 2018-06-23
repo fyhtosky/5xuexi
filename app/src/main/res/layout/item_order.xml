@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWrite"
+    android:orientation="vertical">
+    <!--订单创建时间 订单号-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayish" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/item_order_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:hint="2016-08-01"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/item_order_orderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_order_status"
+            android:alpha="0.7"
+            android:hint="订单号:"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8"
+            android:hint="待支付"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayish" />
+
+    <!--公开课-->
+    <LinearLayout
+        android:id="@+id/item_order_openConatiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--父订单 图文-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:padding="5dp">
+            <!--公开课订单图片-->
+            <RelativeLayout
+                android:id="@+id/item_order_open_containerImage"
+                android:layout_width="148dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:id="@+id/item_order_open_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/item_order_open_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/item_find_image"
+                    android:src="@mipmap/tip_publiclass" />
+            </RelativeLayout>
+            <!--公开课课程名称-->
+            <TextView
+                android:id="@+id/item_order_open_courseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/item_order_open_containerImage"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/item_order_open_containerImage"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+            <!--公开课课程价格-->
+            <TextView
+                android:id="@+id/item_order_open_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_order_open_containerImage"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/item_order_open_containerImage"
+                android:alpha="0.8"
+                android:padding="2dp"
+                android:textSize="12sp" />
+            <!--公开课院校名称-->
+            <TextView
+                android:id="@+id/item_order_open_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/item_order_open_price"
+                android:layout_alignLeft="@id/item_order_open_price"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:padding="2dp"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayish" />
+        <!--底部-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWrite">
+            <!--实付金额-->
+            <TextView
+                android:id="@+id/item_order_open_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="实付总额:"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="7dp" />
+            <!--去评价 去支付 去学习-->
+            <RelativeLayout
+                android:id="@+id/item_order_open_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/item_order_open_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_radius_gopay"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="去支付"
+                    android:textColor="@color/colorGreen"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/item_order_open_golearn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/btn_radius_gopay"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="去学习"
+                    android:textColor="@color/colorGreen" />
+            </RelativeLayout>
+            <!--去评价-->
+            <Button
+                android:id="@+id/item_order_open_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="7dp"
+                android:layout_toLeftOf="@id/item_order_open_container"
+                android:background="@drawable/btn_radius_gopay"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="去评价"
+                android:textColor="@color/colorGreen" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--微专业-->
+    <LinearLayout
+        android:id="@+id/item_order_microConatiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--父订单 图文-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:padding="5dp">
+            <!--微专业订单图片-->
+            <RelativeLayout
+                android:id="@+id/item_order_micro_containerImage"
+                android:layout_width="148dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="5dp">
+                <!--微专业订单图片-->
+                <ImageView
+                    android:id="@+id/item_order_micro_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--微专业订单标贴-->
+                <ImageView
+                    android:id="@+id/item_order_micro_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/item_find_image"
+                    android:src="@mipmap/tip_mirclass" />
+            </RelativeLayout>
+
+            <!--微专业订单课程名称-->
+            <TextView
+                android:id="@+id/item_order_micro_courseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/item_order_micro_containerImage"
+                android:layout_toRightOf="@id/item_order_micro_containerImage"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+            <!--微专业订单课程价格-->
+            <TextView
+                android:id="@+id/item_order_micro_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_order_micro_containerImage"
+                android:layout_toRightOf="@id/item_order_micro_containerImage"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.8"
+                android:padding="2dp"
+                android:textSize="12sp" />
+
+            <!--微专业订单院校名称-->
+            <TextView
+                android:id="@+id/item_order_micro_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_alignLeft="@id/item_order_micro_price"
+                android:layout_above="@id/item_order_micro_price"
+                android:alpha="0.8"
+                android:padding="2dp"
+                android:textSize="12sp" />
+            <!--微专业订单课程开课方式-->
+            <TextView
+                android:id="@+id/item_order_micro_tutionWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/item_order_micro_price"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:drawablePadding="3dp"
+                android:padding="2dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_order_micro_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/item_order_micro_college"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:drawableLeft="@mipmap/openclass_icon"
+                android:drawablePadding="3dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayish" />
+
+        <!--微专业订单开课时间-->
+        <TextView
+            android:id="@+id/item_order_micro_registerTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:hint="开课时间"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGrayish" />
+
+        <!--底部-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWrite">
+            <!--实付金额-->
+            <TextView
+                android:id="@+id/item_order_micro_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="实付总额:"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="7dp" />
+            <!--微专业 去评价 去支付 去学习-->
+            <RelativeLayout
+                android:id="@+id/item_order_micro_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/item_order_micro_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_radius_gopay"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="去支付"
+                    android:textColor="@color/colorGreen"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/item_order_micro_golearn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/btn_radius_gopay"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="去学习"
+                    android:textColor="@color/colorGreen" />
+            </RelativeLayout>
+
+            <!--微专业 去评价-->
+            <Button
+                android:id="@+id/item_order_micro_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="7dp"
+                android:layout_toLeftOf="@id/item_order_micro_container"
+                android:background="@drawable/btn_radius_gopay"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="去评价"
+                android:textColor="@color/colorGreen" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

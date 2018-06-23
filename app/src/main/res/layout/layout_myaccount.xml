@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Me="http://schemas.android.com/apk/res-auto"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--账户安全-->
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/mysafe_titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        title:attr_titlebar_back="@mipmap/icon_back"
+        title:attr_titlebar_title="账户安全"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myaccount_phone"
+        android:onClick="onclick"
+        Me:attr_txt="手机号"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myaccount_username"
+        Me:attr_txt="i 学令牌"
+        android:onClick="onclick"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myaccount_idCard"
+        android:onClick="onclick"
+        Me:attr_txt="身份证号"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/myaccount_password"
+        Me:attr_txt="登录密码"
+        android:onClick="onclick"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

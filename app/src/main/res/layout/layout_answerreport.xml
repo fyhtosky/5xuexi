@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/answer_report_title"
+        app:attr_titlebar_title="作答报告"
+        app:attr_titlebar_back="@mipmap/icon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<include-->
+            <!--layout="@layout/include_answerreport"/>-->
+        <include
+            layout="@layout/layout_exam_report"/>
+
+    </com.sj.yinjiaoyun.xuexi.view.MyScrollView>
+
+</LinearLayout>

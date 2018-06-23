@@ -1,0 +1,244 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--自定义主题风格背景-->
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+
+    <!--自定义弹框-->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--消息里面顶部切换样式  咨询 讨论组 答疑-->
+    <style name="my_message_style">
+        <item name="android:padding">8dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+    </style>
+
+    <!--订单里面dialog顶部样式  -->
+    <style name="my_order_style_top">
+        <item name="android:padding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+        <item name="android:background">@drawable/btn_radius_gopay</item>
+    </style>
+    <!--订单里面dialog 文字内容切换样式  -->
+    <style name="my_order_style_bottom">
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWrite</item>
+    </style>
+
+    <!--课程详情视频里面 文字内容切换样式  -->
+    <style name="my_course_center">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+    </style>
+
+    <style name="my_course_center_schedule_fragment">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/colorWrite</item>
+    </style>
+
+    <!--课程详情视频里面 评论 文字内容切换样式  -->
+    <style name="my_course_comment">
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+    </style>
+
+
+    <!--课程详情视频里面 文字内容切换样式  -->
+    <style name="my_dialog_course">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+    </style>
+
+
+
+    <!--订单里面dialog 出现时候切换样式  -->
+    <style name="MyDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+
+    <!-- 评论列表星星进度条 -->
+    <style name="commentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/comment_rating_bar</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+
+    <!-- 作业 考试 头部三个 的样式 -->
+    <style name="myJobs_style">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">@color/colorWrite</item>
+    </style>
+
+    <!--//创建自定义样式dialog-->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--订单列表里面点击切换学期 ，弹出下拉框样式-->
+    <style name="MyDialogOrderTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 外部变灰 -->
+        <item name="android:windowContentOverlay">@null</item><!-- 内部阴影 -->
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+    <style name="dialog_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+    <!--首页tab里面的轮播图下面 课程表 公开课 微专业样式-->
+    <style name="myStyle_home_radioGroup">
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorHomeitem</item>
+    </style>
+
+    <!--课程表tab里面顶部 专业/微专业/公开课-->
+    <style name="myStyle_Schedule">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWrite</item>
+    </style>
+
+    <!--我的 个人信息-->
+    <style name="myStyle_me">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/colorWrite</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+    </style>
+
+    <!--主页面  首页/发现/课程表/我  四个tab切换-->
+    <style name="myStyle_main">
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/textcolor_greenormgray_selector</item>
+    </style>
+
+    <!-- Loding_dialog样式Start -->
+    <style name="Dialog_bocop">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <!-- Loding_dialog样式End -->
+
+    <style name="top_group">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/qq_constact_font</item>
+        <item name="android:background">@drawable/qq_constact_group</item>
+    </style>
+
+    <style name="top_all">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/qq_constact_font</item>
+        <item name="android:background">@drawable/qq_constact_all</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+    <!-- GIF图片的样式 -->
+    <style name="Widget_GifView"></style>
+    <declare-styleable name="GIFView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+
+    <!--  popWindow 动画-->
+    <style name="my_popwindow">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_18_sp</item>
+    </style>
+    <style name="TabLayoutTextStyleSchedule" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:textSize" >@dimen/text_18_sp</item>
+    </style>
+    <style name="TabLayoutCourseTextStyle">
+        <item name="android:textSize">@dimen/text_14_sp</item>
+    </style>
+</resources>

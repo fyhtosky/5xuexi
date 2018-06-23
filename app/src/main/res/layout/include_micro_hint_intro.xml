@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--图片容 器-->
+    <RelativeLayout
+        android:id="@+id/include_micro_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/micro_hint_intro_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <!--课程名称-->
+    <TextView
+        android:id="@+id/micro_hint_intro_course"
+        android:layout_below="@+id/include_micro_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <!--院校  开课方式 价格  人数-->
+    <RelativeLayout
+        android:id="@+id/include_micro_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/micro_hint_intro_course"
+        android:background="@color/colorWrite"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/micro_hint_intro_college"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/micro_hint_intro_tutionWay"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/micro_hint_intro_price"
+            android:layout_below="@+id/micro_hint_intro_college"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/micro_hint_intro_attention"
+            android:layout_below="@+id/micro_hint_intro_college"
+            android:drawableLeft="@mipmap/openclass_icon"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--报名时间-->
+    <RelativeLayout
+        android:id="@+id/include_micro_timeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/include_micro_label"
+        android:background="@color/colorWrite"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="报名时间"/>
+        <TextView
+            android:id="@+id/micro_hint_intro_registerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:hint="2016-2017"/>
+    </RelativeLayout>
+
+    <!--简介-->
+    <TextView
+        android:id="@+id/micro_hint_intro_jianjie"
+        android:layout_below="@id/include_micro_timeContainer"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:minLines="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"/>
+</RelativeLayout>

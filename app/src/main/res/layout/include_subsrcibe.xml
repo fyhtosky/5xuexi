@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--手机号-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/subscribe_phonehint"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_phone"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/subscribe_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/subscribe_phonehint"
+            android:layout_alignTop="@id/subscribe_phonehint"
+            android:layout_toRightOf="@id/subscribe_phonehint"
+            android:background="@null"
+            android:hint="请输入手机号（必填）"
+            android:textColorHint="@color/colorGray"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/subscribe_phone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <!--手机号-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/subscribe_timehint"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_phone"
+            android:text="预约时间" />
+
+        <TextView
+            android:id="@+id/subscribe_time"
+            android:onClick="onclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/subscribe_timehint"
+            android:layout_alignTop="@id/subscribe_timehint"
+            android:layout_toRightOf="@id/subscribe_timehint"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/date_icon"
+            android:gravity="center_vertical"
+            android:hint="请选择预约时间"
+            android:textColorHint="@color/colorGray"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/subscribe_timehint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <!--姓名-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/subscribe_namehint"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_phone"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/subscribe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/subscribe_namehint"
+            android:layout_alignTop="@id/subscribe_namehint"
+            android:layout_toRightOf="@id/subscribe_namehint"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:textColorHint="@color/colorGray"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/subscribe_namehint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <!--qq-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/subscribe_qqhint"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:text="QQ"
+            android:src="@mipmap/icon_phone" />
+
+        <EditText
+            android:id="@+id/subscribe_qq"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/subscribe_qqhint"
+            android:layout_alignTop="@id/subscribe_qqhint"
+            android:layout_toRightOf="@id/subscribe_qqhint"
+            android:hint="请输入QQ"
+            android:textColorHint="@color/colorGray"
+            android:background="@null"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.5"
+            android:layout_below="@id/subscribe_qqhint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <!--邮箱-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/subscribe_emailhint"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:text="邮箱"
+            android:src="@mipmap/icon_phone" />
+
+        <EditText
+            android:id="@+id/subscribe_email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/subscribe_emailhint"
+            android:layout_alignTop="@id/subscribe_emailhint"
+            android:layout_toRightOf="@id/subscribe_emailhint"
+            android:hint="请输入邮箱"
+            android:textColorHint="@color/colorGray"
+            android:background="@null"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.5"
+            android:layout_below="@id/subscribe_emailhint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <!--留言-->
+    <EditText
+        android:id="@+id/subscribe_userRemark"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:layout_weight="1"
+        android:minLines="6"
+        android:layout_marginLeft="5dp"
+        android:padding="15dp"
+        android:hint="请输入留言（必填）"
+        android:textColorHint="@color/colorGray"
+        android:background="@null"
+        android:paddingLeft="10dp" />
+
+</LinearLayout>

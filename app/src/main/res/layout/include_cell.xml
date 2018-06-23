@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cell="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <!--湖北经济学院-->
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        android:id="@+id/cell_colllegeName"
+        cell:attr_cell_gravity="true"
+        cell:attr_cell_size="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--课程  考试时长-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_courseName"
+            cell:attr_cell_top="true"
+            cell:attr_cell_right="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_examTime"
+            cell:attr_cell_top="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <!--章节   试卷类型-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_zhangjie"
+            cell:attr_cell_top="true"
+            cell:attr_cell_right="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_examLx"
+            cell:attr_cell_top="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--课时   总分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_keshi"
+            cell:attr_cell_top="true"
+            cell:attr_cell_right="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <com.sj.yinjiaoyun.xuexi.view.CellView
+            android:id="@+id/cell_grade"
+            cell:attr_cell_top="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--时间-->
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        android:id="@+id/cell_time"
+        cell:attr_cell_text="时间"
+        cell:attr_cell_gravity="true"
+        cell:attr_cell_top="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--答题规则-->
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        cell:attr_cell_text="答题规则"
+        cell:attr_cell_top="true"
+        cell:attr_cell_color="@color/colorRed"
+        cell:attr_cell_bottom="true"
+        cell:attr_cell_size="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--规则内容-->
+    <com.sj.yinjiaoyun.xuexi.view.CellView
+        cell:attr_cell_text="@string/datiguize"
+        cell:attr_cell_top="true"
+        cell:attr_cell_singleLines="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sj.yinjiaoyun.xuexi.view.NewCheckBox
+        android:id="@+id/cell_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="开始答题"
+        android:textColor="@color/colorWrite"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_greenorgray"/>
+    <TextView
+        android:id="@+id/cell_hint"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

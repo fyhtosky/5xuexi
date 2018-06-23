@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias '5xuexi'
+            keyPassword '5xuexi'
+            storeFile file('../5xuexi.jks')
+            storePassword '5xuexi'
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.sj.yinjiaoyun.xuexi"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 26
+        versionName "2.9.0"
+        multiDexEnabled true
+    }
+    greendao {
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+        daoPackage 'com.sj.yinjiaoyun.xuexi.greedao.gen'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //    implementation 'com.android.support:appcompat-v7:27.1.1'
+    var.SupportV7
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation files('libs/alipaySdk-20170922.jar')
+    implementation files('libs/jcore-android_v1.1.0.jar')
+    implementation 'com.android.support:design:23.3.0'
+    implementation 'com.android.support:recyclerview-v7:23.3.0'
+    implementation 'com.android.support:cardview-v7:23.3.0'
+    implementation files('libs/asmack.jar')
+    implementation 'com.orhanobut:logger:1.15'
+    implementation files('libs/android-toolbox-5.0.0.jar')
+    implementation files('libs/gesture-imageview.jar')
+    implementation files('libs/android-async-http-1.4.4.jar')
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    implementation 'q.rorbin:badgeview:1.0.0'
+    implementation 'org.greenrobot:greendao:3.0.0'
+    implementation 'org.greenrobot:greendao-generator:3.0.0'
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/umeng_shareboard_widget.jar')
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'org.ccil.cowan.tagsoup:tagsoup:1.2'
+    //权限管理
+    implementation('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        exclude module: 'support-v13'
+    }
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    //热更新
+    implementation 'com.aliyun.ams:alicloud-android-hotfix:3.2.0'
+    //分包
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation files('libs/pldroid-player-2.1.3.jar')
+}

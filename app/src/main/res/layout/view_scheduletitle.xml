@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWrite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--顶部专业切换-->
+        <TextView
+            android:id="@+id/scheduletitle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:alpha="0.6"
+            android:maxEms="17"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_centerVertical="true"/>
+
+        <CheckBox
+            android:id="@+id/scheduletitle_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="切换专业"
+            android:alpha="0.6"
+            android:padding="10dp"
+            android:button="@null"
+            android:textColor="@color/textcolor_greenormgray_selector"
+            android:drawableRight="@drawable/find_pop_selector"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:layout_centerVertical="true" />
+    <!--android:drawableRight="@drawable/schedule_pop_selector"-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@id/scheduletitle_name"
+            android:background="@color/colorGrayish"/>
+</RelativeLayout>

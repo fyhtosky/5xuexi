@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp">
+
+    <CheckBox
+        android:id="@+id/item_kec_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textIsSelectable="true"
+        android:button="@drawable/choice_more_selector"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/item_kec_name"
+        android:layout_width="0dp"
+        android:hint="课程"
+        android:textSize="16sp"
+        android:alpha="0.8"
+        android:textColor="@color/colorHomeitem"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_kec_leiXing"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:alpha="0.8"
+        android:textColor="@color/colorHomeitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

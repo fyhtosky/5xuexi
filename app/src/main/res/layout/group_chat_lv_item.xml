@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="09-25 12:00"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_time"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/chart_from_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/chatfrom_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/logo" />
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_toRightOf="@+id/chatfrom_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/chatfrom_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:text="asd as d"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/chatfrom_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/left"
+                    android:gravity="center|left"
+                    android:text="  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_toRightOf="@+id/chatfrom_icon"
+                android:layout_below="@+id/ll_left"
+                android:id="@+id/chatfrom_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/left"
+                android:src="@drawable/skin_about_brand"
+                android:visibility="gone" />
+            <ProgressBar
+                android:layout_below="@+id/chatfrom_img"
+                android:id="@+id/progress_load"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_to_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent" >
+
+            <ImageView
+                android:id="@+id/chatto_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/logo" />
+            <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:paddingRight="2dp"
+                android:layout_toLeftOf="@+id/chatto_icon">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/chatto_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:text="sadas"/>
+               <TextView
+                    android:id="@+id/chatto_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/right"
+                    android:gravity="center|left"
+                   android:textColor="@color/colorWrite"
+                    android:textSize="14sp" />
+        </LinearLayout>
+            <ImageView
+                android:layout_below="@+id/ll_right"
+                android:id="@+id/chatto_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/right"
+                android:layout_toLeftOf="@+id/chatto_icon"
+                android:scaleType="fitXY"
+                android:src="@mipmap/logo"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

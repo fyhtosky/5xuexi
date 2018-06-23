@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorGrayish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <!--简介-->
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite">
+                <!--课程图片-->
+                <LinearLayout
+                    android:id="@+id/intro_container"
+                    android:layout_width="148dp"
+                    android:layout_height="110dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/intro_JianJie_image" />
+                </LinearLayout>
+
+                <!--课程名称-->
+                <TextView
+                    android:id="@+id/intro_JianJie_name"
+                    android:layout_toRightOf="@id/intro_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorHomeitem"
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+                <!--课程信息详情-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/intro_container"
+                    android:layout_toRightOf="@id/intro_container"
+                    android:padding="10dp">
+                        <TextView
+                            android:id="@+id/intro_JianJie_xuefen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:alpha="0.8" />
+
+                        <TextView
+                            android:id="@+id/intro_JianJie_xuenian"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:alpha="0.8" />
+
+                        <TextView
+                            android:id="@+id/intro_JianJie_Jiangshi"
+                            android:layout_below="@id/intro_JianJie_xuefen"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_toLeftOf="@+id/intro_JianJie_leixing"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:lines="1"
+                            android:padding="2dp"
+                            android:alpha="0.8" />
+
+                        <TextView
+                            android:id="@+id/intro_JianJie_leixing"
+                            android:layout_below="@id/intro_JianJie_xuefen"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:alpha="0.8" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/intro_container"
+                    android:background="@color/colorGrayish"/>
+                <!--内容详情-->
+                <TextView
+                    android:id="@+id/intro_JianJie_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/intro_container"
+                    android:alpha="1"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp" />
+        </RelativeLayout>
+
+
+</ScrollView>

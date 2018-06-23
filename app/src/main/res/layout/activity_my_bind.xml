@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:me="http://schemas.android.com/apk/res-auto"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.MyBindActivity">
+    <!--账户安全-->
+    <com.sj.yinjiaoyun.xuexi.view.TitleBarView
+        android:id="@+id/mysafe_titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        title:attr_titlebar_back="@mipmap/icon_back"
+        title:attr_titlebar_title="@string/account_bind"/>
+
+    <!--微信绑定-->
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/bind_weixin"
+        me:attr_image="@mipmap/weixin_gray"
+        me:attr_txt="微信"
+        me:attr_mark="解绑"
+        android:padding="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--微信绑定-->
+    <com.sj.yinjiaoyun.xuexi.view.MeView
+        android:id="@+id/bind_qq"
+        me:attr_image="@mipmap/qq_gray"
+        me:attr_txt="QQ"
+        me:attr_mark="绑定"
+        android:padding="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
